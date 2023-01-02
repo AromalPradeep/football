@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="Author" content="Aromal Pradeep" />
+        <meta
+            name="Description"
+            content="Home page of our DBMS project, Football Management Live."
+        />
+        <title>Manage</title>
+        <link
+            rel="icon"
+            href="{{ url_for('static', filename='FML_icon.png') }}"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/main.css') }}"
+            type="text/css"
+        />
+    </head>
+    <body class="flex-start">
+        <header class="navbar flex-start dark">
+            <nav class="navbar__menu">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item-h">
+                        <h1>Football Management Live</h1>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="index.html" class="navbar__list-link">Home</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="" class="navbar__list-link">Transfer</a>
+                    </li>
+                    <li class="navbar__list-item2">
+                        <a href="" class="navbar__list-link">Guest</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main flex-center">
+            <section id="Players" class="post">
+                <h2>Players</h2>
+            </section>
+            <div class="post">
+                <h2>Team</h2>
+                <section id="Squad" class="post__in">
+                    <h2>Squad</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Pos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="Foramtion" class="post__in">
+                    <h2>Formation</h2>
+                    <h5>dropdown</h5>
+                    <h5>image</h5>
+                </section>
+            </div>
+            <section id="Stats" class="post">
+                <h2>Stats</h2>
+            </section>
+        </main>
+        <footer class="footer flex-center dark">
+            <p><a href="#">Scroll up</a></p>
+        </footer>
+    </body>
+</html>

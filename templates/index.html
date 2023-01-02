@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="Author" content="Aromal Pradeep" />
+        <meta
+            name="Description"
+            content="Home page of our DBMS project, Football Management Live."
+        />
+        <title>Home</title>
+        <link
+            rel="icon"
+            href="{{ url_for('static', filename='FML_icon.png') }}"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/main.css') }}"
+            type="text/css"
+        />
+    </head>
+    <body class="flex-start">
+        <header class="navbar flex-start dark">
+            <nav class="navbar__menu">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item-h">
+                        <h1>Football Management Live</h1>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#Table" class="navbar__list-link">Table</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#Stats" class="navbar__list-link">Stats</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#News" class="navbar__list-link">News</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#Predictions" class="navbar__list-link"
+                            >Predictions</a
+                        >
+                    </li>
+                    <li class="navbar__list-item2">
+                        <a href="" class="navbar__list-link">Sign in</a>
+                    </li>
+                    <li class="navbar__list-item2">
+                        <a href="" class="navbar__list-link">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main flex-center">
+            <section id="Table" class="post">
+                <!-- TODO: Current League Table -->
+                <h2>ISL Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Club</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>24</td>
+                            <td>7</td>
+                            <td>17</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/pFOymUjummnYYqKp__o-LQ_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Mumbai City
+                            </td>
+                            <td>11</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>32</td>
+                            <td>11</td>
+                            <td>21</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/9s51loaywzZwXd10p--Ikw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                ATK Mohun Bagan
+                            </td>
+                            <td>12</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>17</td>
+                            <td>12</td>
+                            <td>5</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/_5VS8XluJxBhUh29V2yB_Q_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Kerala Blasters
+                            </td>
+                            <td>11</td>
+                            <td>7</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>19</td>
+                            <td>14</td>
+                            <td>5</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/2kh601gIWUpwetVLrFYl1A_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Goa
+                            </td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>20</td>
+                            <td>16</td>
+                            <td>4</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/8NSdffH3dYyTy5jLBAKDZA_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Odisha
+                            </td>
+                            <td>11</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>0</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/YD8tGKDHgwFh7r3VsdpCYA_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Chennaiyin
+                            </td>
+                            <td>11</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>21</td>
+                            <td>23</td>
+                            <td>-2</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/hXflGLCHvsqXSesuFky34Q_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                East Bengal
+                            </td>
+                            <td>11</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>7</td>
+                            <td>13</td>
+                            <td>20</td>
+                            <td>-7</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/fGnlgyfbEydLwje2BEEUgQ_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Bengaluru
+                            </td>
+                            <td>12</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>17</td>
+                            <td>-9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/2jNyU8xC7U5Kg5oA_EOpSA_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Jamshedpur
+                            </td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>84</td>
+                            <td>19</td>
+                            <td>-11</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VeolOM7Y1XYnu6ufb1fEjg_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                NorthEast United
+                            </td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>11</td>
+                            <td>10</td>
+                            <td>33</td>
+                            <td>-23</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="test" class="post">
+                <h2>Stats</h2>
+                <button
+                    id="defaultOpen"
+                    class="post__tablink"
+                    onclick="openPage('Goals', this)"
+                >
+                    Goals
+                </button>
+                <button
+                    class="post__tablink"
+                    onclick="openPage('Assists', this)"
+                >
+                    Assists
+                </button>
+                <button
+                    class="post__tablink"
+                    onclick="openPage('Yellow', this)"
+                >
+                    Yellow Cards
+                </button>
+                <button class="post__tablink" onclick="openPage('Red', this)">
+                    Red Cards
+                </button>
+
+                <div id="Goals" class="tabcontent">
+                    <h3>Goals</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Player</th>
+                                <th>Goals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="Assists" class="tabcontent">
+                    <h3>Assists</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Player</th>
+                                <th>Goals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="Yellow" class="tabcontent">
+                    <h3>Yellow Cards</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Player</th>
+                                <th>Goals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="Red" class="tabcontent">
+                    <h3>Red Cards</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Player</th>
+                                <th>Goals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="table__left">
+                                    <img
+                                        class="imso_btl__mh-logo"
+                                        alt=""
+                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                        style="width: 24px; height: 24px"
+                                    />
+                                    Hyderabad
+                                </td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="Stats" class="post">
+                <!-- TODO: Current League Stats -->
+                <h2>Stats</h2>
+                <h3 id="Goals">Goals</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Player</th>
+                            <th>Goals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 id="Assists">Assists</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Player</th>
+                            <th>Goals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 id="Yellow">Yellow Cards</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Player</th>
+                            <th>Goals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 id="Red">Red Cards</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Player</th>
+                            <th>Goals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="News" class="post">
+                <!-- TODO: Current League News -->
+                <h2>News</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dicta fugiat aliquid aspernatur saepe! Veniam consequatur,
+                    minima pariatur explicabo hic dolorum recusandae,
+                    consectetur omnis nam deserunt cupiditate assumenda expedita
+                    corporis voluptatem? Possimus ratione expedita omnis maiores
+                    hic modi amet? Nostrum, ducimus reiciendis! Quod iusto
+                    praesentium sed assumenda dicta tenetur enim rerum minima!
+                    Quasi quos possimus ad eveniet cumque, rem corrupti
+                    voluptatum. Perspiciatis culpa fugit rem dolore aut quos
+                    autem et incidunt minima maxime corrupti dignissimos debitis
+                    fuga, odit minus recusandae. Rerum accusantium
+                    necessitatibus praesentium! Aut error beatae vero
+                    laboriosam, hic deleniti.
+                </p>
+            </section>
+            <section id="Predictions" class="post">
+                <!-- TODO: Current League Predictions -->
+                <h2>Predictions</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dicta fugiat aliquid aspernatur saepe! Veniam consequatur,
+                    minima pariatur explicabo hic dolorum recusandae,
+                    consectetur omnis nam deserunt cupiditate assumenda expedita
+                    corporis voluptatem? Possimus ratione expedita omnis maiores
+                    hic modi amet? Nostrum, ducimus reiciendis! Quod iusto
+                    praesentium sed assumenda dicta tenetur enim rerum minima!
+                    Quasi quos possimus ad eveniet cumque, rem corrupti
+                    voluptatum. Perspiciatis culpa fugit rem dolore aut quos
+                    autem et incidunt minima maxime corrupti dignissimos debitis
+                    fuga, odit minus recusandae. Rerum accusantium
+                    necessitatibus praesentium! Aut error beatae vero
+                    laboriosam, hic deleniti.
+                </p>
+            </section>
+        </main>
+        <footer class="footer flex-center dark">
+            <p><a href="#">Scroll up</a></p>
+        </footer>
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    </body>
+</html>
