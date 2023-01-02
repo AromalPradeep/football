@@ -10,6 +10,25 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+
+# mysql
+# MYSQL Connectivity
+import mysql.connector
+
+# Creating connection object
+mydb = mysql.connector.connect(
+	host = "localhost",
+	user = "root",
+	password = "root",
+    database="football"
+)
+mycursor = mydb.cursor()
+
+sql = "SELECT * FROM Argentina"
+mycursor.execute(sql)
+posts = mycursor.fetchall()
+
+
 # functions
 
 # links
@@ -25,7 +44,7 @@ def profile():
 
 @app.route('/manage')
 def manage():
-    return render_template("manage.html")
+    return render_template("manage.html",posts = posts)
 
 @app.route('/transfer')
 def transfer():

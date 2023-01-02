@@ -100,6 +100,43 @@
                     </tbody>
                 </table>
             </section>
+            <section id="Players_test" class="post">
+                <h2>Players</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Pos</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for post in posts %}
+                        <tr>
+                            <td>{{post[0]}}</td>
+                            <td>{{post[1]}}</td>
+                            <td>{{post[2]}}</td>
+                            <td>{{post[3]}}</td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td>1</td>
+                            <td class="table__left">
+                                <img
+                                    class="imso_btl__mh-logo"
+                                    alt=""
+                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
+                                    style="width: 24px; height: 24px"
+                                />
+                                Hyderabad
+                            </td>
+                            <td>12</td>
+                            <td>healty</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <div class="post">
                 <h2>Team</h2>
                 <section id="Squad" class="post__in">
