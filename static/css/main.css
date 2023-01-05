@@ -361,3 +361,30 @@ table {
 tr:hover {
     box-shadow: 4px 4px 12px #000;
 }
+
+/* test*/
+
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: blue;
+}
+#box3 {
+    background-color: green;
+}
+
+.common {
+    width: 100px;
+    height: 200px;
+    border-color: green;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#parent > div {
+    float: left;
+    clear: none;
+    margin-left: 10px;
+}

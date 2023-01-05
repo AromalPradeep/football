@@ -28,6 +28,9 @@ sql = "SELECT * FROM Argentina"
 mycursor.execute(sql)
 posts = mycursor.fetchall()
 
+sql = "SELECT * FROM tEAMS"
+mycursor.execute(sql)
+teams = mycursor.fetchall()
 
 # functions
 
@@ -44,7 +47,7 @@ def profile():
 
 @app.route('/manage')
 def manage():
-    return render_template("manage.html",posts = posts)
+    return render_template("manage.html",posts = posts, teams = teams)
 
 @app.route('/transfer')
 def transfer():

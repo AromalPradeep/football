@@ -43,60 +43,26 @@
             </nav>
         </header>
         <main class="main flex-center">
-            <section id="Players" class="post">
-                <h2>Players</h2>
+            <section id="Team_test" class="post">
+                <h2>Team Details</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>No.</th>
-                            <th>Name</th>
-                            <th>Pos</th>
-                            <th>Status</th>
+                            <th>Team id</th>
+                            <th>Team Name</th>
+                            <th>Manager</th>
+                            <th>Captain</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {% for post in teams[:1] %}
                         <tr>
-                            <td>1</td>
-                            <td class="table__left">
-                                <img
-                                    class="imso_btl__mh-logo"
-                                    alt=""
-                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
-                                    style="width: 24px; height: 24px"
-                                />
-                                Hyderabad
-                            </td>
-                            <td>12</td>
-                            <td>healty</td>
+                            <td>{{post[0]}}</td>
+                            <td>{{post[1]}}</td>
+                            <td>{{post[2]}}</td>
+                            <td>{{post[3]}}</td>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td class="table__left">
-                                <img
-                                    class="imso_btl__mh-logo"
-                                    alt=""
-                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
-                                    style="width: 24px; height: 24px"
-                                />
-                                Hyderabad
-                            </td>
-                            <td>12</td>
-                            <td>healty</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td class="table__left">
-                                <img
-                                    class="imso_btl__mh-logo"
-                                    alt=""
-                                    src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
-                                    style="width: 24px; height: 24px"
-                                />
-                                Hyderabad
-                            </td>
-                            <td>12</td>
-                            <td>healty</td>
-                        </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </section>
@@ -117,7 +83,7 @@
                             <td>{{post[0]}}</td>
                             <td>{{post[1]}}</td>
                             <td>{{post[2]}}</td>
-                            <td>{{post[3]}}</td>
+                            <td>healthy</td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -139,35 +105,31 @@
                             <tr>
                                 <th colspan="3">Playing XI</th>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td class="table__left">
-                                    <img
-                                        class="imso_btl__mh-logo"
-                                        alt=""
-                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
-                                        style="width: 24px; height: 24px"
-                                    />
-                                    Hyderabad
-                                </td>
-                                <td>12</td>
+                            {% for post in posts[:7] %}
+                            <tr
+                                draggable="true"
+                                ondragstart="startt(event)"
+                                ondragover="dragovert(event)"
+                            >
+                                <td>{{post[0]}}</td>
+                                <td>{{post[1]}}</td>
+                                <td>{{post[2]}}</td>
                             </tr>
+                            {% endfor %}
                             <tr>
                                 <th colspan="3">Substitutions</th>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td class="table__left">
-                                    <img
-                                        class="imso_btl__mh-logo"
-                                        alt=""
-                                        src="//ssl.gstatic.com/onebox/media/sports/logos/VqqF7mFu9h98HGqDxGQaBw_48x48.png"
-                                        style="width: 24px; height: 24px"
-                                    />
-                                    Hyderabad
-                                </td>
-                                <td>12</td>
+                            {% for post in posts[7:] %}
+                            <tr
+                                draggable="true"
+                                ondragstart="startt(event)"
+                                ondragover="dragovert(event)"
+                            >
+                                <td>{{post[0]}}</td>
+                                <td>{{post[1]}}</td>
+                                <td>{{post[2]}}</td>
                             </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </section>
@@ -382,6 +344,40 @@
                     excepturi illum nostrum hic totam a commodi, voluptatem
                     aperiam modi exercitationem? Ipsa!
                 </p>
+            </section>
+            <section id="drag_test" class="post">
+                <div id="parent">
+                    <div
+                        id="box1"
+                        class="common"
+                        draggable="true"
+                        ondragstart="drag(event)"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                    >
+                        Note 1
+                    </div>
+                    <div
+                        id="box2"
+                        class="common"
+                        draggable="true"
+                        ondragstart="drag(event)"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                    >
+                        Note 2
+                    </div>
+                    <div
+                        id="box3"
+                        class="common"
+                        draggable="true"
+                        ondragstart="drag(event)"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                    >
+                        Note 3
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer flex-center dark">
