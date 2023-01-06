@@ -1,0 +1,1 @@
+Folder contains static files such as application images.

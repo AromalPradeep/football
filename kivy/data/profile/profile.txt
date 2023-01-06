@@ -1,0 +1,1 @@
+File contains data regarding last run of application.
